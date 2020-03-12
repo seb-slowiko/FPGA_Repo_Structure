@@ -1,0 +1,2 @@
+IO_JTAG_constraints and IO constrints go here.
+
