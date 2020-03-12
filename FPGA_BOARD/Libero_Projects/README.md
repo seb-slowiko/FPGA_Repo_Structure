@@ -1,5 +1,5 @@
 # (**Enter board name here**) Mi-V Sample FPGA Designs
-This folder contains Tcl scripts that build Libero SoC **(vUpdate version number)** design projects for the RTG4 Development Kit. These scripts are executed in Libero SoC to generate the sample designs.
+This folder contains Tcl scripts that build Libero SoC **(vUpdate version number)** design projects for the (**Enter board name here**). These scripts are executed in Libero SoC to generate the sample designs.
 
 ## <a name="quick"></a> Instructions
 

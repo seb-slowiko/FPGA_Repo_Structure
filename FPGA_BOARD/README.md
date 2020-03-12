@@ -5,7 +5,7 @@ FlashPro Express projects containing pre-generated programming files are also av
 
 To download or clone the repository:
 
-    $ git clone https://github.com/RISCV-on-Microsemi-FPGA/RTG4-Development-Kit.git
+    $ git clone (**Enter repository name here**)
 
     $ Running from the zipped sources
     1. Download the zipped sources via the "Clone or download" button using "Download Zip" button
@@ -24,8 +24,8 @@ The Libero designs include the following features:
 * User peripherals (GPIO, Timers, UART)
 
 ## Target Hardware
-Details of the RTG4 Development kit and it's features can be found:
-* (**Enter board name here**)  [here](https://www.microsemi.com/product-directory/dev-kits-solutions/3865-rtg4-kits)
+Details of the (**Enter board name here**) and it's features can be found:
+* (**Enter board name here**)  [here](**Enter weblink to microsemi board here**))
 
 # FlashPro Express
 The FlashPro_Express_Projects folder contains the pre-generated programming files, which can be downloaded directly to the target board using FlashPro Express.

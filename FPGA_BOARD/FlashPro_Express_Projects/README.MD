@@ -1,6 +1,6 @@
 # (**Enter board name here**) FPGA Programming Files
 
-This folder contains FlashPro Express **(vUpdate version number)** projects for the RTG4 Development Kit Mi-V sample designs.
+This folder contains FlashPro Express **(vUpdate version number)** projects for the (**Enter board name here**) Mi-V sample designs.
 
 ## FlashPro Express
 The programming files contained under this folder were exported from the designs in the Libero_Projects folder in this repository. Select the desired programming file (.job) and program your device using FlashPro Express.
