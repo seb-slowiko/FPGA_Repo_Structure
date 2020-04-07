@@ -19,7 +19,7 @@ Top level script files:
     2. Execute the script, Project -> Execute Script
     3. Select the directory that the script is located in using the "..."
     4. Select the script and select "Open"
-    5. In the arguments text box, enter type of configuration you want e.g. "CFG1"
+    5. In the arguments text box, enter the type of configuration you want e.g. "CFG1"
     6. Select the "Run" button to execute the script
     7. Once complete, a script report will be generated.
 
@@ -59,15 +59,11 @@ Second argument:
 
 ## Design Features
 The Libero designs include the following features:
-* A choice of the soft RISC-V processor:
-  - MIV_RV32IMA_L1_AHB
-  - MIV_RV32IMA_L1_AXI
-  - MiV_RV32IMAF_L1_AHB
-  - MiV_RV32IMC
-* RISC-V debug block allowing on-target debug using SoftConsole.
-* The operating frequency of the design is 50MHz.
-* Target memory is LSRAM.
-* User peripherals (GPIO, Timers, UART).
+* A soft RISC-V processor
+* A RISC-V debug block allowing on-target debug using SoftConsole
+* The operating frequency of the design is 50MHz
+* Target memory is LSRAM
+* User peripherals (GPIO, Timers, UART)
 
 The peripherals in this design are located at the following addresses.
 
