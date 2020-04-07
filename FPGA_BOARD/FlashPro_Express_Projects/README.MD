@@ -21,15 +21,11 @@ The programming files contained under this folder were exported from the designs
 
 ## Design Features
 The Libero designs include the following features:
-* A choice of the following soft RISC-V processors:
-  - MIV_RV32IMA_L1_AHB
-  - MIV_RV32IMA_L1_AXI
-  - MiV_RV32IMAF_L1_AHB
-  - MiV_RV32IMC
-* RISC-V debug block allowing on-target debug using SoftConsole.
-* The operating frequency of the design is 50MHz.
-* Target memory is LSRAM.
-* User peripherals (GPIO, Timers, UART).
+* A soft RISC-V processor
+* A RISC-V debug block allowing on-target debug using SoftConsole
+* The operating frequency of the design is 50MHz
+* Target memory is LSRAM
+* User peripherals (GPIO, Timers, UART)
 
 The peripherals in this design are located at the following addresses.
 
