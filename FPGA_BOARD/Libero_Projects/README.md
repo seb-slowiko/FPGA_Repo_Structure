@@ -3,6 +3,16 @@ This folder contains Tcl scripts that build Libero SoC **(vUpdate version number
 
 ## <a name="quick"></a> Instructions
 
+#### Selecting type of MiV core
+The top level TCL files in the Libero_Projects folder correspond to the type of core that is to be used in the design. Pick the type you want and move onto the next step.
+
+Top level script files:
+| TCL filename                         |  Description                                             |
+| ------------------------------------ |:--------------------------------------------------------:|
+| (Board Name)MiV_RV32IMA_BaseDesign   | Generate a sample design with the MiV_RV32IMA_L1_AHB or MiV_RV32IMA_L1_AXI core  |
+| (Board Name)MiV_RV32IMAF_BaseDesign  | Generate a sample design with the MiV_RV32IMAF_L1_AHB core                       |
+| (Board Name)MiV_RV32IMC_BaseDesign   | Generate a sample design with the MiV_RV32IMC core                               |
+
 
 #### Running Libero SoC in GUI mode
     1. Open Libero SoC
