@@ -44,7 +44,7 @@ In the examples above the arguments "CFG1" and "CFG1 SYNTHESIZE" were entered. T
 First argument:
 | Argument    |  Description   |
 | ------------- |:-------------:|
-| CFGn      | Generate a sample design for the selected configuration  |
+| CFG1..CFGn    | Generate a sample design for the selected configuration  |
 
 
 Second argument:
