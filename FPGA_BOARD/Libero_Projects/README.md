@@ -44,10 +44,8 @@ In the examples above the arguments "CFG1" and "CFG1 SYNTHESIZE" were entered. T
 First argument:
 | Argument    |  Description   |
 | ------------- |:-------------:|
-| CFG1      | Generate a sample design with the AHB interface support  |
-| CFG2      | Generate a sample design with the AXI3 interface support |
-| CFG3      | Generate a sample design with the AXI4 interface support |
-| CFG4      | Generate a sample design with the TCM interface support  |
+| CFGn      | Generate a sample design for the selected configuration  |
+
 
 Second argument:
 | Argument    |  Description   |
