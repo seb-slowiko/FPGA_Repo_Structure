@@ -9,9 +9,9 @@ The top level TCL files in the Libero_Projects folder correspond to the type of 
 Top level script files:
 | TCL filename                         |  Description                                             |
 | ------------------------------------ |:--------------------------------------------------------:|
-| (Board Name)MiV_RV32IMA_BaseDesign   | Generate a sample design with the MiV_RV32IMA_L1_AHB or MiV_RV32IMA_L1_AXI core  |
-| (Board Name)MiV_RV32IMAF_BaseDesign  | Generate a sample design with the MiV_RV32IMAF_L1_AHB core                       |
-| (Board Name)MiV_RV32IMC_BaseDesign   | Generate a sample design with the MiV_RV32IMC core                               |
+| (Board Name)-MiV_RV32IMA_BaseDesign   | Generate a sample design with the MiV_RV32IMA_L1_AHB or MiV_RV32IMA_L1_AXI core  |
+| (Board Name)-MiV_RV32IMAF_BaseDesign  | Generate a sample design with the MiV_RV32IMAF_L1_AHB core                       |
+| (Board Name)-MiV_RV32IMC_BaseDesign   | Generate a sample design with the MiV_RV32IMC core                               |
 
 
 #### Running Libero SoC in GUI mode
