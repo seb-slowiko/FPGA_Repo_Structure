@@ -17,16 +17,30 @@ Top level script files:
 
 #### Available core configurations
 
-The user can choose what kind of configuration is used in their design. Examine the table below to learn about various options available.
+The user can choose what kind of configuration is used in their design. Examine the tables below to learn about various options available. Each table represents configurations available for the given TCL file
 
-| Core | Configuration | Description |
-| ---- | :------------:| :----------:|
-| IMA  | CFG1          | This design uses the MiV_RV32IMA_L1_AHB core with an AHB interface for memory|
-| IMA  | CFG2          | This design uses the MiV_RV32IMA_L1_AHB core with an AXI3 interface for memory|
-| IMAF | CFG1          | This design uses the MiV_RV32IMAF_L1_AHB core with an AXI3 interface for memory|
-| IMC | CFG1           | This design uses the MiV_RV32IMC core with an AHB mirrored interface allowing for direct connection of LSRAM|
-| IMC | CFG2           | This design uses the MiV_RV32IMC core with an AXI4 mirrored interface allowing for direct connection of LSRAM|
-| IMC | CFG3           | This design uses the MiV_RV32IMC core with TCM as the target memory. |
+###### MiV_RV32IMA_BaseDesign
+
+| Config | Description |
+| ------ | :----------:|
+| CFG1   | This design uses the MiV_RV32IMA_L1_AHB core with an AHB interface for memory|
+| CFG2   | This design uses the MiV_RV32IMA_L1_AHB core with an AXI3 interface for memory|
+
+
+###### MiV_RV32IMAF_BaseDesign
+
+| Config | Description |
+| ------ | :----------:|
+| CFG1   |  This design uses the MiV_RV32IMAF_L1_AHB core with an AXI3 interface for memory|
+
+
+###### MiV_RV32IMC_BaseDesign
+
+| Config | Description |
+| ------ | :----------:|
+| CFG1   | This design uses the MiV_RV32IMC core with an AHB mirrored interface allowing for direct connection of LSRAM|
+| CFG2   | This design uses the MiV_RV32IMC core with an AXI4 mirrored interface allowing for direct connection of LSRAM|
+| CFG3   | This design uses the MiV_RV32IMC core with TCM as the target memory |
 
 
 
