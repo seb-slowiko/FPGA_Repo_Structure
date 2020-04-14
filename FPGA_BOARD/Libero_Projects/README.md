@@ -24,8 +24,8 @@ The user can choose what kind of configuration is used in their design. Examine 
 
 | Config | Description |
 | ------ | :----------:|
-| CFG1   | This design uses the MiV_RV32IMA_L1_AHB core with an AHB interface for memory|
-| CFG2   | This design uses the MiV_RV32IMA_L1_AHB core with an AXI3 interface for memory|
+| CFG1   | This design uses the MiV_RV32IMA_L1_AHB core with an **AHB** interface for memory and peripherals|
+| CFG2   | This design uses the MiV_RV32IMA_L1_AHB core with an **AXI3** interface for memory and peripherals|
 
 
 
@@ -33,7 +33,7 @@ The user can choose what kind of configuration is used in their design. Examine 
 
 | Config | Description |
 | ------ | :----------:|
-| CFG1   |  This design uses the MiV_RV32IMAF_L1_AHB core with an AXI3 interface for memory|
+| CFG1   |  This design uses the MiV_RV32IMAF_L1_AHB core with an **AXI3** interface for memory and peripherals|
 
 
 
@@ -41,9 +41,9 @@ The user can choose what kind of configuration is used in their design. Examine 
 
 | Config | Description |
 | ------ | :----------:|
-| CFG1   | This design uses the MiV_RV32IMC core with an AHB mirrored interface allowing for direct connection of LSRAM|
-| CFG2   | This design uses the MiV_RV32IMC core with an AXI4 mirrored interface allowing for direct connection of LSRAM|
-| CFG3   | This design uses the MiV_RV32IMC core with TCM as the target memory |
+| CFG1   | This design uses the MiV_RV32IMC core with an **AHB** mirrored interface allowing for direct connection to LSRAM. Core provides direct APB3 connection for peripherals. |
+| CFG2   | This design uses the MiV_RV32IMC core with an **AXI4** mirrored interface allowing for direct connection of LSRAM|
+| CFG3   | This design uses the MiV_RV32IMC core with **TCM** as the target memory |
 
 
 
