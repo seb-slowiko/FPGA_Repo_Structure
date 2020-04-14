@@ -17,7 +17,7 @@ Top level script files:
 
 #### Available core configurations
 
-The user can choose what kind of configuration is used in their design. Examine the tables below to learn about various options available. Each table represents configurations available for the given TCL file
+The user can choose what kind of configuration is used in their design. Examine the tables below to learn about various options available. Each table represents configurations available for the provided TCL files.
 
 
 ###### MiV_RV32IMA_BaseDesign
