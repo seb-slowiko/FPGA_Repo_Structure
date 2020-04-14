@@ -14,6 +14,17 @@ Top level script files:
 | (Board Name)-MiV_RV32IMC_BaseDesign   | Generate a sample design with the MiV_RV32IMC core                               |
 
 
+# Table Sample 1 #
+
+| Core | Configuration | Description |
+| ---- | :------------:| :----------:|
+| IMA  | CFG1          | This core uses a standard AHB|
+| IMA  | CFG2          | This core uses a standard AXI|
+
+
+# Table Samples 2 #
+
+
 #### Running Libero SoC in GUI mode
     1. Open Libero SoC
     2. Execute the script, Project -> Execute Script
