@@ -15,7 +15,7 @@ Top level script files:
 
 
 
-##### Available core configurations
+#### Available core configurations
 
 The user can choose what kind of configuration is used in their design. Examine the table below to learn about various options available.
 
