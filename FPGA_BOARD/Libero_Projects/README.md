@@ -14,7 +14,8 @@ Top level script files:
 | (Board Name)-MiV_RV32IMC_BaseDesign   | Generate a sample design with the MiV_RV32IMC core                               |
 
 
-###### Available core configurations
+
+##### Available core configurations
 
 The user can choose what kind of configuration is used in their design. Examine the table below to learn about various options available.
 
