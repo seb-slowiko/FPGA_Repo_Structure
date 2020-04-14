@@ -41,11 +41,9 @@ The user can choose what kind of configuration is used in their design. Examine 
 
 | Config | Extension | Description |
 | ------ | :--------:| :----------:|
-| CFG1   |   IMC     | This design uses the MiV_RV32IMC core with an **AHB** mirrored interface allowing for direct connection to LSRAM. Features:
-- Macc (Pipelined) design
-- 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug |
-| CFG2   |   IM       |This design uses the MiV_RV32IMC core with an **AXI4** mirrored interface allowing for direct connection of LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug|
-| CFG3   |  I          |This design uses the MiV_RV32IMC core with **TCM** as the target memory. Features: 6 External IRQs, Internal MTIME, Internal MTIME IRQ. |
+| CFG1   |   IMC     | This design uses the MiV_RV32IMC core with an **AHB** mirrored interface allowing for direct connection to LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug. |
+| CFG2   |   IM       |This design uses the MiV_RV32IMC core with an **AXI4** mirrored interface allowing for direct connection of LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug.|
+| CFG3   |  I          |This design uses the MiV_RV32IMC core with **TCM** as the target memory. Features: 6 External IRQs, Internal MTIME, Internal MTIME IRQ, design initialization from TCM. |
 
 
 
