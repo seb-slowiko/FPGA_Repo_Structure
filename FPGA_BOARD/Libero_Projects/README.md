@@ -39,11 +39,11 @@ The user can choose what kind of configuration is used in their design. Examine 
 
 ###### MiV_RV32IMC_BaseDesign
 
-| Config | Description |
-| ------ | :----------:|
-| CFG1   | This design uses the MiV_RV32IMC core with an **AHB** mirrored interface allowing for direct connection to LSRAM. Core provides direct APB3 connection for peripherals. |
-| CFG2   | This design uses the MiV_RV32IMC core with an **AXI4** mirrored interface allowing for direct connection of LSRAM|
-| CFG3   | This design uses the MiV_RV32IMC core with **TCM** as the target memory |
+| Config | Extension | Description |
+| ------ | :--------:| :----------:|
+| CFG1   |   IMC     | This design uses the MiV_RV32IMC core with an **AHB** mirrored interface allowing for direct connection to LSRAM. Core provides direct APB3 connection for peripherals. |
+| CFG2   |   IM       |This design uses the MiV_RV32IMC core with an **AXI4** mirrored interface allowing for direct connection of LSRAM|
+| CFG3   |  I          |This design uses the MiV_RV32IMC core with **TCM** as the target memory |
 
 
 
