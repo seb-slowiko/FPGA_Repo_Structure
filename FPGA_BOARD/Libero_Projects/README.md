@@ -7,8 +7,8 @@ This folder contains Tcl scripts that build Libero SoC **(vUpdate version number
 The top level TCL files in the Libero_Projects folder correspond to the type of core that is to be used in the design. Pick the type you want and move onto the next step.
 
 Top level script files:
-| TCL filename                         |  Description                                             |
-| ------------------------------------ |:--------------------------------------------------------:|
+| TCL filename                          |  Description                                             |
+| ------------------------------------- |:--------------------------------------------------------:|
 | (Board Name)-MiV_RV32IMA_BaseDesign   | Generate a sample design with the MiV_RV32IMA_L1_AHB or MiV_RV32IMA_L1_AXI core  |
 | (Board Name)-MiV_RV32IMAF_BaseDesign  | Generate a sample design with the MiV_RV32IMAF_L1_AHB core                       |
 | (Board Name)-MiV_RV32IMC_BaseDesign   | Generate a sample design with the MiV_RV32IMC core                               |
@@ -22,28 +22,28 @@ The user can choose what kind of configuration is used in their design. Examine 
 
 ###### MiV_RV32IMA_BaseDesign
 
-| Config | Description |
-| ------ | :----------:|
-| CFG1   | This design uses the MiV_RV32IMA_L1_AHB core with an **AHB** interface for memory and peripherals|
-| CFG2   | This design uses the MiV_RV32IMA_L1_AHB core with an **AXI3** interface for memory and peripherals|
+| Config  |Extension| Description |
+| :------:|:-------:|:-----------:|
+| CFG1    |IMA      | This design uses the MiV_RV32IMA_L1_AHB core with an **AHB** interface for memory and peripherals|
+| CFG2    |IMA      | This design uses the MiV_RV32IMA_L1_AHB core with an **AXI3** interface for memory and peripherals|
 
 
 
 ###### MiV_RV32IMAF_BaseDesign
 
-| Config | Description |
-| ------ | :----------:|
-| CFG1   |  This design uses the MiV_RV32IMAF_L1_AHB core with an **AXI3** interface for memory and peripherals|
+| Config  |Extension| Description |
+| :------:|:-------:|:-----------:|
+| CFG1    |IMAF     |  This design uses the MiV_RV32IMAF_L1_AHB core with an **AXI3** interface for memory and peripherals|
 
 
 
 ###### MiV_RV32IMC_BaseDesign
 
-| Config | Extension | Description |
-| ------ | :--------:| :----------:|
-| CFG1   |   IMC     | This design uses the MiV_RV32IMC core with an **AHB** mirrored interface allowing for direct connection to LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug. |
-| CFG2   |   IM       |This design uses the MiV_RV32IMC core with an **AXI4** mirrored interface allowing for direct connection of LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug.|
-| CFG3   |  I          |This design uses the MiV_RV32IMC core with **TCM** as the target memory. Features: 6 External IRQs, Internal MTIME, Internal MTIME IRQ, design initialization from TCM. |
+| Config  |Extension| Description |
+| :------:|:-------:|:-----------:|
+| CFG1    |   IMC   | This design uses the MiV_RV32IMC core with an **AHB** mirrored interface allowing for direct connection to LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug. |
+| CFG2    |   IM    |This design uses the MiV_RV32IMC core with an **AXI4** mirrored interface allowing for direct connection of LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug.|
+| CFG3    |  I      |This design uses the MiV_RV32IMC core with **TCM** as the target memory. Features: 6 External IRQs, Internal MTIME, Internal MTIME IRQ, design initialization from TCM. |
 
 
 
