@@ -14,15 +14,19 @@ Top level script files:
 | (Board Name)-MiV_RV32IMC_BaseDesign   | Generate a sample design with the MiV_RV32IMC core                               |
 
 
-# Table Sample 1 #
+###### Available core configurations
+
+The user can choose what kind of configuration is used in their design. Examine the table below to learn about various options available.
 
 | Core | Configuration | Description |
 | ---- | :------------:| :----------:|
-| IMA  | CFG1          | This core uses a standard AHB|
-| IMA  | CFG2          | This core uses a standard AXI|
+| IMA  | CFG1          | This design uses the MiV_RV32IMA_L1_AHB core with an AHB interface for memory|
+| IMA  | CFG2          | This design uses the MiV_RV32IMA_L1_AHB core with an AXI3 interface for memory|
+| IMAF | CFG1          | This design uses the MiV_RV32IMAF_L1_AHB core with an AXI3 interface for memory|
+| IMC | CFG1           | This design uses the MiV_RV32IMC core with an AHB mirrored interface allowing for direct connection of LSRAM|
+| IMC | CFG2           | This design uses the MiV_RV32IMC core with an AXI4 mirrored interface allowing for direct connection of LSRAM|
+| IMC | CFG3           | This design uses the MiV_RV32IMC core with TCM as the target memory. |
 
-
-# Table Samples 2 #
 
 
 #### Running Libero SoC in GUI mode
