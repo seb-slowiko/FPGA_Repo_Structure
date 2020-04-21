@@ -1,5 +1,5 @@
 # (**Enter board name here**) Mi-V Sample FPGA Designs
-This folder contains Tcl scripts that build Libero SoC **(vUpdate version number)** design projects for the (**Enter board name here**). These scripts are executed in Libero SoC to generate the sample designs.
+This folder contains Tcl scripts that build Libero SoC **(vUpdate version number)** design projects for the (**Enter board name here**). These scripts are executed in Libero SoC to generate the sample designs. All cores boot from memory at 0x8000_0000.
 
 
 ###### (Board-Name)-MiV_RV32IMA_BaseDesign
@@ -26,6 +26,7 @@ This folder contains Tcl scripts that build Libero SoC **(vUpdate version number
 | CFG1    | This design uses the MiV_RV32IMC core configured as follows: <ul><li>RISC-V Extensions: IMC</li><li>Multiplier: MACC (Pipelined)</li><li>Interfaces: AHB Master (mirrored), APB3 Master</li><li>Internal IRQs: 6</li><li>TCM: Enabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: enabled</li></ul>|
 | CFG2    | This design uses the MiV_RV32IMC core configured as follows: <ul><li>RISC-V Extensions: IM</li><li>Multiplier: Fabric</li><li>Interfaces: AXI4 Master (mirrored), APB3 Master</li><li>Internal IRQs: 6</li><li>TCM: Disabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: enabled</li></ul>|
 | CFG3    | This design uses the MiV_RV32IMC core configured as follows: <ul><li>RISC-V Extensions: I</li><li>Multiplier: none</li><li>Interfaces: APB3 Master</li><li>Internal IRQs: 6</li><li>TCM: Enabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: enabled</li></ul>|
+
 
 
 ## <a name="quick"></a> Instructions
@@ -58,25 +59,25 @@ Libero executes the script and opens the Mi-V sample project. The script adds Ti
 In the examples above the arguments "CFG1" and "CFG1 SYNTHESIZE" were entered. The complete set of script arguments are documented here.
 
 First argument:
-| Argument    |  Description   |
-| ------------- |:-------------:|
-| CFG1..CFGn    | Generate a sample design for the selected configuration  |
+| Argument                  |  Description   |
+| ------------------------- |:---------------|
+| CFG1..CFGn                | Generate a sample design for the selected configuration  |
 
 
 Second argument:
-| Argument    |  Description   |
-| ------------- |:-------------:|
-| SYNTHESIZE | Run synthesis on the design  |
-| PLACE_AND_ROUTE | Run place and route on the design  |
-| GENERATE_BITSTREAM | Generate the bitstream for the design|
-| EXPORT_PROGRAMMING_FILE | Export the programming file (.job) |
+| Argument                  |  Description   |
+| ------------------------- |:---------------|
+| SYNTHESIZE                | Run synthesis on the design  |
+| PLACE_AND_ROUTE           | Run place and route on the design  |
+| GENERATE_BITSTREAM        | Generate the bitstream for the design|
+| EXPORT_PROGRAMMING_FILE   | Export the programming file (.job) |
 
 ## Design Features
 The Libero designs include the following features:
 * A soft RISC-V [processor](https://github.com/RISCV-on-Microsemi-FPGA/CPUs)
 * A RISC-V debug block allowing on-target debug using SoftConsole
 * The operating frequency of the design is 50MHz
-* Target memory is LSRAM
+* Target memory is RAM
 * User peripherals (GPIO, Timers, UART)
 
 The peripherals in this design are located at the following addresses.
@@ -88,4 +89,4 @@ The peripherals in this design are located at the following addresses.
 | CoreTimer_0   | 0x7000_3000   |
 | CoreTimer_1   | 0x7000_4000   |
 | CoreGPIO_OUT  | 0x7000_5000   |
-| LSRAM| 0x8000_0000|
+| RAM| 0x8000_0000|
