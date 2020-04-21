@@ -1,52 +1,34 @@
 # (**Enter board name here**) Mi-V Sample FPGA Designs
 This folder contains Tcl scripts that build Libero SoC **(vUpdate version number)** design projects for the (**Enter board name here**). These scripts are executed in Libero SoC to generate the sample designs.
 
+
+###### (Board-Name)-MiV_RV32IMA_BaseDesign
+
+| Config  | Description |
+| :------:|:------------|
+| CFG1    |This design uses the MiV_RV32IMA_L1_AHB core with an **AHB** interface for memory and peripherals|
+| CFG2    |This design uses the MiV_RV32IMA_L1_AHB core with an **AXI3** interface for memory and peripherals|
+
+
+###### (Board-Name)-MiV_RV32IMAF_BaseDesign
+
+| Config  |Description |
+| :------:|:-----------|
+| CFG1    |  This design uses the MiV_RV32IMAF_L1_AHB core with an **AXI3** interface for memory and peripherals|
+
+
+
+###### (Board-Name)-MiV_RV32IMC_BaseDesign
+
+
+| Config  |Description  |
+| :------:|:------------|
+| CFG1    | This design uses the MiV_RV32IMC core configured as follows: <ul><li>RISC-V Extensions: IMC</li><li>Multiplier: MACC (Pipelined)</li><li>Interfaces: AHB Master (mirrored), APB3 Master</li><li>Internal IRQs: 6</li><li>TCM: Enabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: enabled</li></ul>|
+| CFG2    | This design uses the MiV_RV32IMC core configured as follows: <ul><li>RISC-V Extensions: IM</li><li>Multiplier: MACC (Pipelined)</li><li>Interfaces: AXI4 Master (mirrored), APB3 Master</li><li>Internal IRQs: 6</li><li>TCM: Disabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: enabled</li></ul>|
+| CFG3    | This design uses the MiV_RV32IMC core configured as follows: <ul><li>RISC-V Extensions: I</li><li>Multiplier: none</li><li>Interfaces: APB3 Master</li><li>Internal IRQs: 6</li><li>TCM: Enabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: enabled</li></ul>|
+
+
 ## <a name="quick"></a> Instructions
-
-#### Selecting type of MiV core
-The top level TCL files in the Libero_Projects folder correspond to the type of core that is to be used in the design. Pick the type you want and move onto the next step.
-
-Top level script files:
-| TCL filename                          |  Description                                             |
-| ------------------------------------- |:--------------------------------------------------------:|
-| (Board Name)-MiV_RV32IMA_BaseDesign   | Generate a sample design with the MiV_RV32IMA_L1_AHB or MiV_RV32IMA_L1_AXI core  |
-| (Board Name)-MiV_RV32IMAF_BaseDesign  | Generate a sample design with the MiV_RV32IMAF_L1_AHB core                       |
-| (Board Name)-MiV_RV32IMC_BaseDesign   | Generate a sample design with the MiV_RV32IMC core                               |
-
-
-
-#### Available core configurations
-
-The user can choose what kind of configuration is used in their design. Examine the tables below to learn about various options available. Each table represents configurations available for the provided TCL files.
-
-
-###### MiV_RV32IMA_BaseDesign
-
-| Config  |Extension| Description |
-| :------:|:-------:|:-----------:|
-| CFG1    |IMA      | This design uses the MiV_RV32IMA_L1_AHB core with an **AHB** interface for memory and peripherals|
-| CFG2    |IMA      | This design uses the MiV_RV32IMA_L1_AHB core with an **AXI3** interface for memory and peripherals|
-
-
-
-###### MiV_RV32IMAF_BaseDesign
-
-| Config  |Extension| Description |
-| :------:|:-------:|:-----------:|
-| CFG1    |IMAF     |  This design uses the MiV_RV32IMAF_L1_AHB core with an **AXI3** interface for memory and peripherals|
-
-
-
-###### MiV_RV32IMC_BaseDesign
-
-| Config  |Extension| Description |
-| :------:|:-------:|:-----------:|
-| CFG1    |   IMC   | This design uses the MiV_RV32IMC core with an **AHB** mirrored interface allowing for direct connection to LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug. |
-| CFG2    |   IM    |This design uses the MiV_RV32IMC core with an **AXI4** mirrored interface allowing for direct connection of LSRAM. Features: Macc (Pipelined) design, 6 External IRQs, TCM, Internal MTIME, Internal MTIME IRQ and Debug.|
-| CFG3    |  I      |This design uses the MiV_RV32IMC core with **TCM** as the target memory. Features: 6 External IRQs, Internal MTIME, Internal MTIME IRQ, design initialization from TCM. |
-
-
-
 
 #### Running Libero SoC in GUI mode
     1. Open Libero SoC
