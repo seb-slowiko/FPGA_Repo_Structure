@@ -7,7 +7,7 @@ This folder contains Tcl scripts that build Libero SoC **(vUpdate version number
 | Config  | Description |
 | :------:|:------------|
 | CFG1    |This design uses the MiV_RV32IMA_L1_AHB core with an **AHB** interface for memory and peripherals|
-| CFG2    |This design uses the MiV_RV32IMA_L1_AHB core with an **AXI3** interface for memory and peripherals|
+| CFG2    |This design uses the MiV_RV32IMA_L1_AXI core with an **AXI3** interface for memory and peripherals|
 
 
 ###### (Board-Name)-MiV_RV32IMAF_BaseDesign
