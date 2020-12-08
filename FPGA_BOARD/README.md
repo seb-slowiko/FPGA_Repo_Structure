@@ -1,6 +1,11 @@
 # (**Enter board name here**) Mi-V Sample Designs
 
-This repository contains Libero projects for the MIV_RV32IMA_L1_AHB and MIV_RV32IMA_L1_AXI soft core RISC-V processors.
+This repository contains Libero projects for the following soft core RISC-V processors:
+* MIV_RV32
+* MIV_RV32IMA_L1_AHB
+* MIV_RV32IMA_L1_AXI
+* MIV_RV32IMAF_L1_AHB
+
 FlashPro Express projects containing pre-generated programming files are also available for each of the designs.
 
 To download or clone the repository:
@@ -13,15 +18,16 @@ To download or clone the repository:
 
 
 # Libero Projects
-The Libero_Projects folder contains sample Mi-V Libero designs.
+The Libero_Projects folder contains sample Mi-V Libero designs for Libero (**version**). Libero projects for older Libero releases can be downloaded from their [tags] (**link**).
 
 ## Design Features
 The Libero designs include the following features:
-* A MIV_RV32IMA_L1_AHB or MIV_RV32IMA_L1_AXI soft RISC-V [processor](https://github.com/RISCV-on-Microsemi-FPGA/CPUs)
-* RISC-V debug block allowing on-target debug using SoftConsole
+* A soft RISC-V [processor](https://github.com/RISCV-on-Microsemi-FPGA/CPUs)
+* A RISC-V debug block allowing on-target debug using SoftConsole
 * The operating frequency of the design is 50MHz
-* Target memory is LSRAM
-* User peripherals (GPIO, Timers, UART)
+* Target memory is SRAM (32kB)
+* User peripherals: 2 Timers, UART, 2 GPIO Inputs and 4 GPIO Outputs (GPIOs use fixed configs for simplicity and better resource utilization)
+
 
 ## Target Hardware
 Details of the (**Enter board name here**) and it's features can be found:
@@ -44,6 +50,3 @@ the standalone version.
 
 ## SoftConsole
 SoftConsole is Microsemi’s free software development environment facilitating the rapid development of bare-metal and RTOS based C/C++ software for Microsemi CPU and SoC based FPGAs. It provides development and debug support for all Microsemi SoC FPGAs and 32-bit soft IP CPUs. SoftConsole can be downloaded [here](https://www.microsemi.com/product-directory/design-tools/4879-softconsole).  
-
-### SoftConsole Projects
-A set of RISC-V example software projects are also available for these designs from the SoftConsole [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole).
